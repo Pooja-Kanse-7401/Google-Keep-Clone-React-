@@ -25,8 +25,7 @@ const Reminders = () => {
     })
   }
 
-  const handleNotes = (e) => {
-    e.preventDefault()
+  const handleNotes = () => {
     const inputId = { ...input, id: nanoid() }
     dispatch(addNotes(inputId))
     alert("Submited")
